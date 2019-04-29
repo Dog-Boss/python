@@ -14,7 +14,7 @@ def t2s(t):
 def dictinit(output):
    for key in output.keys():
         for i in range(601):
-           output[key][i] = []
+           output[key][i] = [6]
 
 def main():
     data_file1 = Path("C:\\Users\\win7\\Desktop\\ora0425_18.dat")
@@ -23,6 +23,7 @@ def main():
     data_file_dir = Path("C:\\Users\\win7\\Desktop\\")
     hostname = ''
     mes_type = ''
+    flag = 0
     dictinit(output)
     for line in data1.readlines():
         line = line.strip('\n')
